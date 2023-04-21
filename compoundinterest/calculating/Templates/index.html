@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Compound Interest Calculator</title>
+  </head>
+  <body style="background-color: lemonchiffon;">
+    <center><h1 style="font-style: italic; font-size: 36px; color: crimson;" >Compound Interest Calculator</h1></center>
+    <hr>
+    <form method="post">
+      {% csrf_token %}
+      <center><table style="font-size: 25px;">
+        <tr><td>
+      
+        <label for="principal" style="font-size: 25px; color: crimson;"><i><b>Principal:</b></i></label>
+        <input type="number" name="principal" required><br><br></td></tr>
+        <tr><td><label for="time" style="font-size: 25px; color: crimson;"><i><b>Time (years):</b></i></label>
+      <input type="number" name="time" required><br><br></td></tr>
+      <tr><td> <label for="rate" style="font-size: 25px; color: crimson;"><i><b>Interest Rate (%):</b></i></label>
+      <input type="number" name="rate" required><br><br></td></tr>
+      <tr><td> <button type="submit" style="color: crimson; font-size: 25px;"><i><b>Calculate</b></i></button></b></td></tr>
+    </table> </center></form>
+  </body>
+</html>
